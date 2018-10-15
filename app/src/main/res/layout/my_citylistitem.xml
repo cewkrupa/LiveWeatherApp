@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/vv_tvCityName"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignTop="@+id/vv_tvCityTemp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/vv_tvCityState"
+        android:layout_alignBottom="@+id/vv_tvCityTemp"
+        android:layout_alignLeft="@+id/vv_tvCityName"
+        android:layout_alignStart="@+id/vv_tvCityName" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vv_tvCityZip"
+        android:layout_alignBaseline="@+id/vv_tvCityState"
+        android:layout_alignBottom="@+id/vv_tvCityState"
+        android:layout_toRightOf="@+id/vv_tvCityState"
+        android:layout_toEndOf="@+id/vv_tvCityState"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/vv_tvCityTemp"
+        android:padding="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/vv_tvTempAbv"
+        android:layout_toStartOf="@+id/vv_tvTempAbv" />
+
+    <TextView
+        android:text="C° "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vv_tvTempAbv"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/vv_tvCityName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/vv_tvCityTemp"/>
+
+
+</RelativeLayout>

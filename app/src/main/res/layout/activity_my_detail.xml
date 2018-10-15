@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_detail"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.connor.LiveWeatherAppPartIII.MyDetailActivity">
+
+
+    <TextView
+        android:text="I"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vv_tvDetailCityWeatherIcon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="256sp" />
+
+    <TextView
+        android:text="Sunny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vv_tvDetailCityWeatherDesc"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="City, State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vv_tvDetailCityAndState"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vv_detailTempAbv"
+            android:layout_alignBottom="@+id/vv_tvDetailCityTemp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+        <TextView
+            android:text="70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vv_tvDetailCityTempLow"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignLeft="@+id/vv_tvDetailCityTempHigh"
+            android:layout_alignStart="@+id/vv_tvDetailCityTempHigh"
+            android:layout_alignBottom="@+id/vv_detailTempAbv" />
+
+        <TextView
+            android:text="70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vv_tvDetailCityTempHigh"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_above="@+id/vv_tvDetailCityTempLow"
+            android:layout_toRightOf="@+id/vv_detailTempAbv"
+            android:layout_toEndOf="@+id/vv_detailTempAbv"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp" />
+
+        <TextView
+            android:text="70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vv_tvDetailCityTemp"
+            android:textAppearance="@android:style/TextAppearance.Material.Display3"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/vv_detailTempAbv"
+            android:layout_toStartOf="@+id/vv_detailTempAbv"
+            android:layout_marginRight="62dp"
+            android:layout_marginEnd="62dp" />
+    </RelativeLayout>
+</LinearLayout>
